@@ -1,25 +1,47 @@
 <!DOCTYPE html>
+<!-- Stap 1: Definieer het documenttype als HTML -->
 <html lang="en">
 <head>
+    <!-- Stap 2: Metadata sectie waarin tekenset en viewport instellingen worden gedefinieerd -->
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Stap 3: Stel de titel van de pagina in -->
+    <title>Character Counter</title>
+    <!-- Stap 4: Link een CSS-bestand voor de styling van de pagina -->
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-
+<!-- Stap 5: Maak een container voor alle inhoud -->
+<div class="container">
+    <!-- Stap 6: Voeg een kop toe voor de titel van de pagina -->
+    <h1>Analyze your text in real-time.</h1>
+    <!-- Stap 7: Creëer een tekst invoerveld -->
+    <label for="textInput">
+        <textarea id="textInput" placeholder="Start typing here... (or paste your text)"></textarea>
+    </label>
+    <!-- Stap 8: Voeg opties toe voor het bewerken van de tekst -->
+    <div class="options">
+        <div class="checkboxes">
+            <!-- Stap 9: Checkbox om spaties uit te sluiten -->
+            <label for="excludeSpaces"><input id="excludeSpaces" type="checkbox"> Exclude Spaces</label>
+            <!-- Stap 10: Checkbox om een karakterlimiet in te stellen -->
+            <label for="setCharLimit"><input id="setCharLimit" type="checkbox"> Set Character Limit</label>
+            <!-- Stap 11: Nummer invoerveld om de karakterlimiet in te voeren, verborgen totdat het nodig is -->
+            <label for="charLimitInput">
+                <input id="charLimitInput" placeholder="Enter limit" style="display:none;" type="number">
+            </label>
+        </div>
+        <!-- Stap 12: Toon geschatte leestijd -->
+        <div><span id="readingTime">0</span> min approx. reading time</div>
+    </div>
+    <!-- Stap 13: Voeg resultaatgebieden toe voor het weergeven van karakter, woord, en zin tellingen -->
+    <div class="results">
+        <div class="result-item"><span id="charCount">00</span> Total Characters</div>
+        <div class="result-item"><span id="wordCount">00</span> Word Count</div>
+        <div class="result-item"><span id="sentenceCount">00</span> Sentence Count</div>
+    </div>
+</div>
+<!-- Stap 14: Koppel een JavaScript-bestand voor de functionaliteit van de pagina -->
+<script src="script.js"></script>
 </body>
 </html>
-
-<!-- Stap 1: Definieer het documenttype als HTML -->
-<!-- Stap 2: Metadata sectie waarin tekenset en viewport instellingen worden gedefinieerd -->
-<!-- Stap 3: Stel de titel van de pagina in -->
-<!-- Stap 4: Link een CSS-bestand voor de styling van de pagina -->
-<!-- Stap 5: Maak een container voor alle inhoud -->
-<!-- Stap 6: Voeg een kop toe voor de titel van de pagina -->
-<!-- Stap 7: Creëer een tekst invoerveld -->
-<!-- Stap 8: Voeg opties toe voor het bewerken van de tekst -->
-<!-- Stap 9: Checkbox om spaties uit te sluiten -->
-<!-- Stap 10: Checkbox om een karakterlimiet in te stellen -->
-<!-- Stap 11: Nummer invoerveld om de karakterlimiet in te voeren, verborgen totdat het nodig is -->
-<!-- Stap 12: Toon geschatte leestijd -->
-<!-- Stap 13: Voeg resultaatgebieden toe voor het weergeven van karakter, woord, en zin tellingen -->
-<!-- Stap 14: Koppel een JavaScript-bestand voor de functionaliteit van de pagina -->

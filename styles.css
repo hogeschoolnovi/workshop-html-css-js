@@ -1,57 +1,75 @@
 /* Stap 1: Stel algemene stijlen in voor de body */
-/* Gebruik Arial of sans-serif als back-up lettertype */
-/* Donkere achtergrondkleur */
-/* Tekstkleur wit voor contrast */
-/* Flexbox voor centreren inhoud */
-/* Centreer horizontaal */
-/* Centreer verticaal */
-/* Volledige hoogte van het viewport */
-/* Verwijder standaard marge */
+body {
+    font-family: Arial, sans-serif; /* Gebruik Arial of sans-serif als back-up lettertype */
+    background-color: #333; /* Donkere achtergrondkleur */
+    color: white; /* Tekstkleur wit voor contrast */
+    display: flex; /* Flexbox voor centreren inhoud */
+    justify-content: center; /* Centreer horizontaal */
+    align-items: center; /* Centreer verticaal */
+    height: 100vh; /* Volledige hoogte van het viewport */
+    margin: 0; /* Verwijder standaard marge */
+}
 
 /* Stap 2: Stel stijlen in voor de container die de inhoud bevat */
-/* Centreer de tekst binnen de container */
-/* Containerbreedte is 80% van de ouder */
+.container {
+    text-align: center; /* Centreer de tekst binnen de container */
+    width: 80%; /* Containerbreedte is 80% van de ouder */
+}
 
 /* Stap 3: Stijl de hoofdkop */
-/* Ruimte onder de kop */
-/* Grote tekstgrootte voor kop */
+h1 {
+    margin-bottom: 100px; /* Ruimte onder de kop */
+    font-size: 80px; /* Grote tekstgrootte voor kop */
+}
 
 /* Stap 4: Stijl het tekstveld */
-/* Volledige breedte van de container */
-/* Hoogte van het tekstveld */
-/* Ruimte onder het tekstveld */
-/* Donkere achtergrondkleur van het tekstveld */
-/* Tekstkleur wit voor leesbaarheid */
-/* Geen rand rond het tekstveld */
-/* Padding binnen het tekstveld */
-/* Inclusief padding en border in de breedte en hoogte */
-/* Tekstgrootte binnen het tekstveld */
+textarea {
+    width: 100%; /* Volledige breedte van de container */
+    height: 150px; /* Hoogte van het tekstveld */
+    margin-bottom: 20px; /* Ruimte onder het tekstveld */
+    background-color: #222; /* Donkere achtergrondkleur van het tekstveld */
+    color: white; /* Tekstkleur wit voor leesbaarheid */
+    border: none; /* Geen rand rond het tekstveld */
+    padding: 10px; /* Padding binnen het tekstveld */
+    box-sizing: border-box; /* Inclusief padding en border in de breedte en hoogte */
+    font-size: 16px; /* Tekstgrootte binnen het tekstveld */
+}
 
 /* Stap 5: Stijl labels binnen checkboxes */
-/* Ruimte rechts van elke checkbox */
-/* Tekstgrootte van labels */
+.checkboxes label {
+    margin-right: 20px; /* Ruimte rechts van elke checkbox */
+    font-size: 16px; /* Tekstgrootte van labels */
+}
 
 /* Stap 6: Stijl de opties sectie */
-/* Gebruik flexbox voor het aligneren van items */
-/* Ruimte gelijk verdelen tussen items */
-/* Ruimte onder de opties sectie */
+.options {
+    display: flex; /* Gebruik flexbox voor het aligneren van items */
+    justify-content: space-between; /* Ruimte gelijk verdelen tussen items */
+    margin-bottom: 20px; /* Ruimte onder de opties sectie */
+}
 
 /* Stap 7: Stijl het resultaatgebied */
-/* Flexbox voor het tonen van resultaten */
-/* Centreer de items */
-/* Ruimte tussen de resultaat items */
-/* Ruimte boven de resultaten */
+.results {
+    display: flex; /* Flexbox voor het tonen van resultaten */
+    justify-content: center; /* Centreer de items */
+    gap: 20px; /* Ruimte tussen de resultaat items */
+    margin-top: 50px; /* Ruimte boven de resultaten */
+}
 
 /* Stap 8: Stijl elk resultaat item */
-/* Flexbox voor layout */
-/* Items verticaal stapelen */
-/* Align items aan de start */
-/* Laat elk item groeien om ruimte te vullen */
-/* Achtergrondkleur van item */
-/* Padding rondom het item */
-/* Afgeronde hoeken */
-/* Verticale padding */
+.result-item {
+    display: flex; /* Flexbox voor layout */
+    flex-direction: column; /* Items verticaal stapelen */
+    align-items: start; /* Align items aan de start */
+    flex-grow: 1; /* Laat elk item groeien om ruimte te vullen */
+    background: #444; /* Achtergrondkleur van item */
+    padding: 10px 20px; /* Padding rondom het item */
+    border-radius: 5px; /* Afgeronde hoeken */
+    padding-block: 20px; /* Verticale padding */
+}
 
 /* Stap 9: Stijl de span elementen binnen result-item */
-/* Vetgedrukte tekst */
-/* Grote tekstgrootte voor impact */
+.result-item span {
+    font-weight: bold; /* Vetgedrukte tekst */
+    font-size: 64px; /* Grote tekstgrootte voor impact */
+}
